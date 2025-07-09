@@ -1,55 +1,67 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjetas de Regalo | Crea Diseños Únicos</title>
     <meta name="description" content="Crea las mejores tarjetas de regalo personalizadas gratis. Ahorra tiempo con diseños únicos.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
-    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800" x-data="{ isOpen: false }">
+    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="#" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <a href="https://diego27ay.github.io/tarjetas-de-regalo-2025-07-09-b6opw" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
                     Tarjetas de Regalo
                 </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#caracteristicas" class="hover:text-purple-400 transition-colors duration-300">Características</a>
-                    <a href="#beneficios" class="hover:text-purple-400 transition-colors duration-300">Beneficios</a>
-                    <a href="#faq" class="hover:text-purple-400 transition-colors duration-300">FAQ</a>
-                    <a href="#contacto" class="hover:text-purple-400 transition-colors duration-300">Contacto</a>
+                    <a href="#caracteristicas" class="hover:text-purple-400 transition-colors duration-300 hover:scale-105">Características</a>
+                    <a href="#beneficios" class="hover:text-purple-400 transition-colors duration-300 hover:scale-105">Beneficios</a>
+                    <a href="#testimonios" class="hover:text-purple-400 transition-colors duration-300 hover:scale-105">Testimonios</a>
+                    <a href="#about" class="hover:text-purple-400 transition-colors duration-300 hover:scale-105">Nosotros</a>
+                    <a href="#faq" class="hover:text-purple-400 transition-colors duration-300 hover:scale-105">FAQ</a>
+                    <a href="#contacto" class="hover:text-purple-400 transition-colors duration-300 hover:scale-105">Contacto</a>
                 </div>
-                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
-                    </svg>
+                <button class="mobile-menu-button md:hidden focus:outline-none" aria-label="Menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            <div class="md:hidden" x-show="isOpen" @click.away="isOpen = false">
+            <div class="mobile-menu hidden md:hidden absolute left-0 right-0 bg-gray-900 border-b border-gray-800 mt-4">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="#caracteristicas" class="block px-3 py-2 hover:bg-gray-800 rounded-md">Características</a>
-                    <a href="#beneficios" class="block px-3 py-2 hover:bg-gray-800 rounded-md">Beneficios</a>
-                    <a href="#faq" class="block px-3 py-2 hover:bg-gray-800 rounded-md">FAQ</a>
-                    <a href="#contacto" class="block px-3 py-2 hover:bg-gray-800 rounded-md">Contacto</a>
+                    <a href="#caracteristicas" class="block px-3 py-2 hover:bg-gray-800 rounded-md transition-colors duration-300">Características</a>
+                    <a href="#beneficios" class="block px-3 py-2 hover:bg-gray-800 rounded-md transition-colors duration-300">Beneficios</a>
+                    <a href="#testimonios" class="block px-3 py-2 hover:bg-gray-800 rounded-md transition-colors duration-300">Testimonios</a>
+                    <a href="#about" class="block px-3 py-2 hover:bg-gray-800 rounded-md transition-colors duration-300">Nosotros</a>
+                    <a href="#faq" class="block px-3 py-2 hover:bg-gray-800 rounded-md transition-colors duration-300">FAQ</a>
+                    <a href="#contacto" class="block px-3 py-2 hover:bg-gray-800 rounded-md transition-colors duration-300">Contacto</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="relative min-h-screen flex items-center justify-center py-24 px-6">
-            <div class="absolute inset-0 bg-gradient-to-br from-purple-900 via-gray-900 to-gray-900 opacity-50"></div>
+        <section class="relative min-h-screen flex items-center justify-center py-24 px-6" style="background-image: url('https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/90 via-gray-900/90 to-gray-900/90"></div>
             <div class="container mx-auto text-center relative z-10">
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
                     Crea las mejores tarjetas de regalo
                 </h1>
                 <p class="text-xl md:text-2xl mb-12 text-gray-300">
-                    Diseña tarjetas únicas y personalizadas de forma gratuita
+                    Diseña tarjetas únicas y personalizadas de forma gratuita.<br>
+                    Más de 1000+ plantillas disponibles para todas las ocasiones.
                 </p>
                 <a href="https://adornosparacumple.com/" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-4 px-8 rounded-full hover:scale-105 transform transition duration-300 shadow-lg hover:shadow-purple-500/25">
-                    Comenzar Ahora
+                    Comenzar Ahora - ¡Es Gratis!
                 </a>
             </div>
         </section>
@@ -61,32 +73,106 @@
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div class="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition duration-300 shadow-lg hover:shadow-purple-500/25">
-                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center transform hover:rotate-12 transition-transform duration-300">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">100% Gratis</h3>
-                        <p class="text-gray-400">Crea todas las tarjetas que desees sin costo alguno</p>
+                        <h3 class="text-xl font-bold mb-4">100% Gratis y Sin Límites</h3>
+                        <p class="text-gray-400">Disfruta de acceso ilimitado a todas nuestras funciones básicas. Crea, personaliza y descarga todas las tarjetas que desees sin costo alguno.</p>
                     </div>
                     <div class="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition duration-300 shadow-lg hover:shadow-purple-500/25">
-                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center transform hover:rotate-12 transition-transform duration-300">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Diseños Personalizados</h3>
-                        <p class="text-gray-400">Tú haces tus propios diseños únicos y creativos</p>
+                        <h3 class="text-xl font-bold mb-4">Diseños Profesionales Personalizables</h3>
+                        <p class="text-gray-400">Accede a más de 1000 plantillas profesionales y personalízalas con nuestro editor intuitivo. Añade fotos, textos y elementos decorativos únicos.</p>
                     </div>
                     <div class="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition duration-300 shadow-lg hover:shadow-purple-500/25">
-                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-6 flex items-center justify-center transform hover:rotate-12 transition-transform duration-300">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Ahorra Tiempo</h3>
-                        <p class="text-gray-400">Interfaz intuitiva para crear rápidamente</p>
+                        <h3 class="text-xl font-bold mb-4">Ahorra Tiempo con Diseño Rápido</h3>
+                        <p class="text-gray-400">Crea tarjetas profesionales en minutos con nuestra interfaz intuitiva. Guarda tus diseños favoritos y reutilízalos cuando quieras.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="py-24 px-6 bg-gray-900">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+                    Lo que dicen nuestros usuarios
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition-transform duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Increíble plataforma. He creado más de 50 tarjetas para mi negocio de eventos y mis clientes quedan encantados. El editor es súper intuitivo."</p>
+                        <p class="font-bold">María González</p>
+                        <p class="text-sm text-gray-400">Organizadora de Eventos</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition-transform duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Las plantillas son muy profesionales y el proceso de personalización es rápido. He ahorrado horas de trabajo."</p>
+                        <p class="font-bold">Carlos Ruiz</p>
+                        <p class="text-sm text-gray-400">Diseñador Freelance</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition-transform duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Perfecto para mi pequeña tienda. Las tarjetas de regalo han aumentado mis ventas en un 30%. El soporte al cliente es excelente."</p>
+                        <p class="font-bold">Ana Martínez</p>
+                        <p class="text-sm text-gray-400">Propietaria de Tienda</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition-transform duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"La mejor plataforma que he encontrado. Uso las tarjetas para todas mis campañas de marketing y los resultados son excepcionales."</p>
+                        <p class="font-bold">Pedro Sánchez</p>
+                        <p class="text-sm text-gray-400">Marketing Manager</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 px-6 bg-gray-800">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+                    Sobre Nosotros
+                </h2>
+                <div class="space-y-8 text-gray-300">
+                    <p class="leading-relaxed">
+                        Fundada en 2020, nuestra plataforma nació de la necesidad de democratizar el diseño de tarjetas de regalo profesionales. Lo que comenzó como un proyecto personal se ha convertido en una herramienta utilizada por más de 100,000 usuarios en todo el mundo, ayudando a pequeños negocios y particulares a crear diseños únicos y memorables.
+                    </p>
+                    <p class="leading-relaxed">
+                        Nuestra misión es hacer que el diseño profesional sea accesible para todos, independientemente de su presupuesto o experiencia. Nos guían valores fundamentales como la innovación continua, la satisfacción del usuario y el compromiso con la calidad. Creemos en el poder de un buen diseño para transformar experiencias y conectar personas.
+                    </p>
                 </div>
             </div>
         </section>
@@ -97,17 +183,25 @@
                     Preguntas Frecuentes
                 </h2>
                 <div class="max-w-3xl mx-auto space-y-6">
-                    <div class="bg-gray-800 rounded-lg p-6">
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
                         <h3 class="text-xl font-semibold mb-4">¿Es realmente gratis?</h3>
-                        <p class="text-gray-400">Sí, todas las funciones básicas son completamente gratuitas.</p>
+                        <p class="text-gray-400">Sí, todas las funciones básicas son completamente gratuitas, incluyendo acceso a plantillas, editor básico y descarga de diseños. Ofrecemos planes premium con características adicionales para usuarios avanzados.</p>
                     </div>
-                    <div class="bg-gray-800 rounded-lg p-6">
-                        <h3 class="text-xl font-semibold mb-4">¿Puedo descargar mis diseños?</h3>
-                        <p class="text-gray-400">Sí, puedes descargar tus tarjetas en formato PDF o imagen.</p>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-4">¿En qué formatos puedo descargar mis diseños?</h3>
+                        <p class="text-gray-400">Puedes descargar tus tarjetas en múltiples formatos: PDF de alta calidad, JPG, PNG y formatos para impresión profesional. Todos los diseños se optimizan automáticamente para el formato seleccionado.</p>
                     </div>
-                    <div class="bg-gray-800 rounded-lg p-6">
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
                         <h3 class="text-xl font-semibold mb-4">¿Necesito crear una cuenta?</h3>
-                        <p class="text-gray-400">No es necesario para funciones básicas, pero recomendamos registrarte para guardar tus diseños.</p>
+                        <p class="text-gray-400">No es obligatorio para funciones básicas, pero recomendamos registrarte para guardar tus diseños, acceder a tu historial y recibir actualizaciones sobre nuevas plantillas y características.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-4">¿Puedo usar mis propias imágenes?</h3>
+                        <p class="text-gray-400">¡Por supuesto! Puedes subir tus propias imágenes y logos para personalizar completamente tus diseños. Aceptamos formatos JPG, PNG y SVG con un límite de 10MB por archivo.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-xl font-semibold mb-4">¿Ofrecen soporte técnico?</h3>
+                        <p class="text-gray-400">Sí, contamos con soporte técnico por email 24/7 y una extensa base de conocimientos con tutoriales y guías paso a paso para ayudarte a crear los mejores diseños.</p>
                     </div>
                 </div>
             </div>
@@ -116,13 +210,13 @@
         <section id="contacto" class="py-24 px-6 bg-gradient-to-br from-purple-900 via-gray-900 to-gray-900">
             <div class="container mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8">¿Necesitas ayuda?</h2>
-                <p class="text-xl mb-8 text-gray-300">Contáctanos en:</p>
-                <a href="mailto:diego27ay@gmail.com" class="text-2xl font-semibold text-purple-400 hover:text-purple-300 transition-colors duration-300">
+                <p class="text-xl mb-8 text-gray-300">Nuestro equipo está listo para asistirte</p>
+                <a href="mailto:diego27ay@gmail.com" class="text-2xl font-semibold text-purple-400 hover:text-purple-300 transition-colors duration-300 hover:scale-105 inline-block">
                     diego27ay@gmail.com
                 </a>
                 <div class="mt-12">
                     <a href="https://adornosparacumple.com/" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-4 px-8 rounded-full hover:scale-105 transform transition duration-300 shadow-lg hover:shadow-purple-500/25">
-                        Comenzar a Diseñar
+                        Comenzar a Diseñar Gratis
                     </a>
                 </div>
             </div>
@@ -131,7 +225,7 @@
 
     <footer class="bg-gray-900 border-t border-gray-800 py-12 px-6">
         <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Tarjetas de Regalo</h3>
                     <p class="text-gray-400">Crea diseños únicos y personalizados para todas tus ocasiones especiales.</p>
@@ -140,13 +234,33 @@
                     <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
                     <ul class="space-y-2">
                         <li><a href="#caracteristicas" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Características</a></li>
-                        <li><a href="#beneficios" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Beneficios</a></li>
+                        <li><a href="#testimonios" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Testimonios</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Sobre Nosotros</a></li>
                         <li><a href="#faq" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://diego27ay.github.io/tarjetas-de-regalo-2025-07-09-b6opw/privacy.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Política de Privacidad</a></li>
+                        <li><a href="https://diego27ay.github.io/tarjetas-de-regalo-2025-07-09-b6opw/terms.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Términos de Servicio</a></li>
+                        <li><a href="https://diego27ay.github.io/tarjetas-de-regalo-2025-07-09-b6opw/blog.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contacto</h3>
                     <p class="text-gray-400">Email: diego27ay@gmail.com</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
@@ -154,5 +268,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
